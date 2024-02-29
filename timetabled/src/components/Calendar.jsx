@@ -108,7 +108,7 @@ const Calendar = () => {
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <Event event='Fancy Dinner 🎩' color='green' />
                     </tr>
                 </tbody>
             </table>
