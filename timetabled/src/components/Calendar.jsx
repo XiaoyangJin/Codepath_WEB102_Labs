@@ -20,22 +20,22 @@ const Calendar = () => {
                 <tbody>
                     <tr>
                         <td className="time">8 am</td>
-                        <Event />
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <Event event='Starbucks ☕️' color='green' />
+                        <Event event='Yolk 🍳' color='green' />
+                        <Event event='Starbucks ☕️' color='green' />
+                        <Event event='Yolk 🍳' color='green' />
+                        <Event event='Starbucks ☕️' color='green' />
+                        <Event event='Yolk 🍳' color='green' />
+                        <Event event='Yolk 🍳' color='green' />
                     </tr>
                     <tr>
                         <td className="time">9 am</td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <Event event='Subway 🚊' color='pink' />
+                        <Event event='Subway 🚊' color='pink' />
+                        <Event event='Subway 🚊' color='pink' />
+                        <Event event='Subway 🚊' color='pink' />
+                        <Event event='Subway 🚊' color='pink' />
                         <td></td>
                     </tr><tr>
                         <td className="time">10 am</td>
@@ -93,13 +93,14 @@ const Calendar = () => {
                         <td></td>
                     </tr><tr>
                         <td className="time">4 pm</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <Event event='Work Out 😄' color='blue' />
+                        <Event event='Work Out 😄' color='blue' />
+                        <Event event='Work Out 😄' color='blue' />
+                        <Event event='Work Out 😄' color='blue' />
+                        <Event event='Work Out 😄' color='blue' />
+                        <Event event='Work Out 😄' color='blue' />
+                        <Event event='Work Out 😄' color='blue' />
+
                     </tr><tr>
                         <td className="time">5 pm</td>
                         <td></td>
