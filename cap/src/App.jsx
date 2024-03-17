@@ -5,8 +5,22 @@ import APIForm from './components/APIForm';
 
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 const submitForm = () => {
-
-
+  let defaultValues = {
+    format: "jpeg",
+    no_ads: "true",
+    no_cookie_banners: "true",
+    width: "1920",
+    height: "1080",
+  };
+  if (inputs.url == "" || inputs.url == " ") {
+    alert("You forgot to submit an url!");
+  } else {
+    for (const [key, value] of Object.entries(inputs)) {
+      if (value == "") {
+        inputs[key] = defaultValues[key]
+      }
+    }
+  }
 }
 
 function App() {
