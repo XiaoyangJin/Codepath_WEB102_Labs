@@ -7,6 +7,7 @@ const RecipeChoices = ({ handleChange, label, choices, checked }) => {
                 {choices &&
                     choices.map((choice) => (
                         <li key={choice}>
+
                             <input
                                 id={choice}
                                 value={choice}
@@ -15,6 +16,7 @@ const RecipeChoices = ({ handleChange, label, choices, checked }) => {
                                 onChange={handleChange}
                                 checked={checked == choice}
                             />
+
                             {choice}
                         </li>
                     ))}

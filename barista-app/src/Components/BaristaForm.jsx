@@ -43,6 +43,7 @@ const BaristaForm = () => {
     };
 
     const onCheckAnswer = () => {
+
         if (trueRecipe.temp != inputs['temperature']) {
             setCheckedTemperature('wrong');
         }
