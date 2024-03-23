@@ -8,16 +8,37 @@ function App() {
     cuisine: ''
   })
 
-  const [record, setRecord] = useState([{ name: 'test', cuisine: 'food' }]);
+  const [record, setRecord] = useState([]);
+
+  const handelForm = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
+
+  const addRecord = (e) => {
+    e.preventDefault();
+    setRecord([...record, form]);
+  }
 
   return (
     <>
       <h1>Add a Restaurant</h1>
-      <form>
+      <form onSubmit={addRecord}>
         <label htmlFor='name'>Name: </label><br />
-        <input type="text" name='name' id='name' placeholder='please enter name' /><br />
+        <input
+          value={form.name}
+          onChange={handelForm}
+          type="text"
+          name='name'
+          id='name'
+          placeholder='please enter name' /><br />
         <label htmlFor='cuisine'>Cuisine: </label><br />
-        <input type="text" name='cuisine' id='cuisine' placeholder='please enter cuisine' /><br />
+        <input
+          value={form.cuisine}
+          onChange={handelForm}
+          type="text"
+          name='cuisine'
+          id='cuisine'
+          placeholder='please enter cuisine' /><br />
         <input type="submit" />
       </form>
       <h2>My Restaurant</h2>
