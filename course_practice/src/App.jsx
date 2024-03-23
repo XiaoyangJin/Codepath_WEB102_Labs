@@ -5,8 +5,8 @@ function App() {
   const [count, setCount] = useState({ likes: 1 })
 
   function handleCount() {
-    count.likes++;
-    setCount(count);
+
+    setCount({ likes: count.likes + 1 });
   }
 
   return (
