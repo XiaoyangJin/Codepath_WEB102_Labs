@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 
 const Post = () => {
     useEffect(() => {
-        console.log("Post component has mounted")
+        // mounting
+        console.log("Post component has mounted");
+
+        return () => {
+            console.log("Post component has unmounted");
+        }
     }, []);
 
     return (
