@@ -7,6 +7,8 @@ function App() {
 
   const [showImage, setShowImage] = useState(false);
 
+  const names = ["People1", "People2", "people3"];
+
 
   return (
     <>
@@ -16,7 +18,14 @@ function App() {
           showImage && <Post />
         }
       </div> */}
-      <Counter />
+      {/* <Counter /> */}
+      <ul>
+        {
+          names.map((name, i) => (
+            <li key={i}>{name}</li>
+          ))
+        }
+      </ul>
     </>
   )
 }
