@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Counter from './components/Counter';
 import Post from './components/Post'
 
 function App() {
@@ -9,12 +10,13 @@ function App() {
 
   return (
     <>
-      <div>
+      {/* <div>
         <button onClick={() => setShowImage(!showImage)}>Toggle Image</button>
         {
           showImage && <Post />
         }
-      </div>
+      </div> */}
+      <Counter />
     </>
   )
 }
