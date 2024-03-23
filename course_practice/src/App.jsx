@@ -18,7 +18,9 @@ function App() {
           showImage && <Post />
         }
       </div> */}
+
       {/* <Counter /> */}
+
       <ul>
         {
           names.map((name, i) => (
