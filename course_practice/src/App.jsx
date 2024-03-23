@@ -2,17 +2,17 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState({ likes: 1 })
-
-  function handleCount() {
-
-    setCount({ likes: count.likes + 1 });
-  }
 
   return (
     <>
-      <h1>Count: {count.likes}</h1>
-      <button onClick={handleCount}>Set count</button>
+      <h1>My Restaurant</h1>
+      <form>
+        <label htmlFor='name'>Name: </label><br />
+        <input type="text" name='name' id='name' placeholder='please enter name' /><br />
+        <label htmlFor='cuisine'>Cuisine: </label><br />
+        <input type="text" name='cuisine' id='cuisine' placeholder='please enter cuisine' /><br />
+        <input type="submit" />
+      </form>
     </>
   )
 }
