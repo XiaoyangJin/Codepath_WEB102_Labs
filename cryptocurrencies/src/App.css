@@ -5,6 +5,18 @@ body {
   color: black;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.home-link {
+  border: 1px dotted blue;
+  background: white;
+  width: 75px;
+}
+
 .icons {
   height: 2em;
   width: 2rem;
