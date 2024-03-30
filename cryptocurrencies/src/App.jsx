@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { useEffect } from 'react';
 import CoinInfo from './Components/CoinInfo';
+import { useRoutes } from "react-router-dom";
 
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
